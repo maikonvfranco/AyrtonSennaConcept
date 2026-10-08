@@ -1,3 +1,7 @@
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ce16db0b-4769-49a1-a291-553f8d6d08f5" />
+
+
+
 This website is a fictional fan project, created solely for educational and portfolio purposes, to demonstrate web development and UI design skills. 
 There is no real cryptocurrency, token, or financial product associated with this project ($SENNA12 is purely conceptual). 
 This site is not affiliated with, endorsed by, or connected to Ayrton Senna, Senna Brands, or Formula 1.
