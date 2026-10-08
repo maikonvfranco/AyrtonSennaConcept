@@ -1,6 +1,4 @@
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ce16db0b-4769-49a1-a291-553f8d6d08f5" />
-
-
+<img width="410" height="230" alt="Adobe Express - Vite + React - Vivaldi 2026-10-08 12-12-17 (2)" src="https://github.com/user-attachments/assets/5193f1d7-19b8-41d5-8c1d-33a2fd79b713" />
 
 This website is a fictional fan project, created solely for educational and portfolio purposes, to demonstrate web development and UI design skills. 
 There is no real cryptocurrency, token, or financial product associated with this project ($SENNA12 is purely conceptual). 
