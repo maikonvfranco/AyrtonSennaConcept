@@ -1,3 +1,5 @@
+<img width="1919" height="916" alt="Captura de tela 2026-10-08 120641" src="https://github.com/user-attachments/assets/86fb95e9-b525-43f3-8fae-108f37b27707" />
+
 <img width="410" height="230" alt="Adobe Express - Vite + React - Vivaldi 2026-10-08 12-12-17 (2)" src="https://github.com/user-attachments/assets/5193f1d7-19b8-41d5-8c1d-33a2fd79b713" />
 
 This website is a fictional fan project, created solely for educational and portfolio purposes, to demonstrate web development and UI design skills. 
