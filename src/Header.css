@@ -1,0 +1,61 @@
+/* Header.css */
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+    position: fixed; /* Fixa o header no topo da página */
+    top: 4vh; /* Espaço de 5vh do topo */
+    width: 58%; /* Largura do header */
+    height: 5vh; /* Altura proporcional à altura da tela */
+    background: rgb(102,1,1);
+    background: linear-gradient(180deg, rgba(102,1,1,1) 0%, rgba(172,0,0,1) 100%);
+    color: white; /* Cor do texto */
+    padding: 10px 20px; /* Ajuste o padding para diminuir a altura */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000; /* Garante que o header fique acima de outros elementos */
+    border-radius: 1.5vh; /* Bordas arredondadas */
+  }
+  
+  p {
+    font-size: large; /* Tamanho da fonte menor para um header compacto */
+    font-weight: bold;
+  }
+  
+  .buyBtn {
+    display: inline-block;
+    background-color: rgb(0, 158, 0); /* Verde inicial */
+    color: white;
+    font-size: x-large;
+    font-weight: 600;
+    padding: 0.8vh 2vh;
+    margin-right: 2vh;
+    border-radius: 0.5vh;
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.3s ease, 
+                background-color 0.3s ease-in-out, 
+                color 0.3s ease-in-out, 
+                box-shadow 0.3s ease-in-out;
+}
+
+/* Hover - muda a cor suavemente */
+.buyBtn:hover {
+    transform: scale(1.1);
+    background-color: rgb(255, 255, 255); /* Branco no hover */
+    color: rgb(0, 120, 0); /* Verde escuro para contraste */
+    box-shadow: 0px 4px 15px rgba(0, 120, 0, 0.5);
+}
+
+/* Quando pressionado */
+.buyBtn:active {
+    transform: scale(1.05);
+    background-color: rgb(230, 230, 230); /* Cinza claro ao clicar */
+    color: rgb(0, 100, 0); /* Verde ainda mais escuro */
+    box-shadow: 0px 2px 10px rgba(0, 100, 0, 0.4);
+}
+

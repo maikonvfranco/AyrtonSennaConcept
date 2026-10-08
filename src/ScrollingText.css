@@ -1,0 +1,51 @@
+.marquee-wrapper {
+    width: 58vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.marquee-item {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(228, 228, 228);
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.marquee-item::before {
+    content: "•";  /* Adiciona a bolinha */
+    color: rgb(200,0,0);     /* Cor vermelha */
+    font-size: 1.8rem;
+    margin-right: 0.5rem;
+}
+
+/* Estiliza a segunda linha (menos legível) */
+.marquee-blur {
+    filter: blur(4px);
+    opacity: 0.6; /* Reduz a opacidade para diminuir a visibilidade */
+    color: rgb(150, 150, 150); /* Deixa o texto mais escuro */
+}
+
+
+/* Suaviza a transição nas extremidades */
+.marquee-wrapper::before,
+.marquee-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.marquee-wrapper::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), transparent);
+}
+
+.marquee-wrapper::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(0, 0, 0, 1), transparent);
+}

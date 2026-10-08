@@ -1,0 +1,209 @@
+#root {
+  text-align: center;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: black;
+}
+::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: darkred;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Impede que o conteúdo fique maior que a tela */
+}
+
+/* TIPOGRAFIA */
+h1 {
+  text-shadow: 0 0 12vh rgb(255, 0, 0);
+  font-size: 6vh;
+  font-weight: bolder;
+  margin-bottom: 2vh;
+}
+
+h2 {
+  text-shadow: 0 0 12vh rgb(255, 0, 0);
+  font-size: 5vh;
+  font-weight: bolder;
+  margin-bottom: 2vh;
+}
+
+h3, h4 {
+  font-weight: normal;
+  font-size: medium;
+  margin-bottom: 2vh;
+}
+
+h3 {
+  color: rgb(209, 209, 209);
+}
+
+h4 {
+  color: rgb(255, 208, 0);
+}
+
+.highlight {
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+}
+
+.highlight2 {
+  color: white;
+  font-weight: bold;
+}
+
+/* SEÇÕES */
+.partOne {
+  margin: 0;
+  height: 110vh;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(06,06,06);
+  padding-top: 4vh;
+}
+
+.partTwo, .partThree {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+  text-align: left;
+  flex-wrap: wrap; /* Permite quebra em telas pequenas */
+  padding: 0 5vw; /* Adiciona espaçamento lateral */
+}
+
+.partGifs{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+  text-align: center;
+  flex-wrap: wrap; /* Permite quebra em telas pequenas */
+}
+
+.gifs{
+  width: 25vw;
+  margin: 1%;
+}
+
+.partFour {
+  height: 5vh;
+}
+
+/* Ajuste da img1 para cortar as bordas e manter o formato adequado */
+.img1 {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Corta as bordas em vez de distorcer */
+  overflow: hidden; /* Garante que nada ultrapasse */
+}
+
+.img2 {
+  height: 65vh;
+  margin-right: 5vw;
+  max-width: 90%; /* Impede que estoure a tela */
+}
+
+/* TEXTOS */
+.text1, .text2 {
+  font-weight: normal;
+  font-size: 2vh;
+}
+
+.text2 {
+  margin: 0;
+}
+
+.divText {
+  max-width: 24vw;
+  margin-bottom: 10vh;
+}
+
+/* BOTÕES */
+.buyBtn2 {
+  display: inline-block;
+  background-color: rgb(0, 158, 0);
+  color: white;
+  font-size: large;
+  font-weight: 600;
+  padding: 0.8vh 2vh;
+  margin-right: 2vh;
+  border-radius: 0.8vh;
+  text-align: center;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 0 3vh green;
+}
+
+.buyBtn2:hover {
+  transform: scale(1.1);
+  color: white;
+  background-color: rgb(0, 120, 0);
+}
+
+/* MEDIA QUERIES - RESPONSIVIDADE */
+@media (max-width: 1024px) {
+  h1 { font-size: 5vh; }
+  h2 { font-size: 4vh; }
+  .img2 {
+    height: auto;
+    width: 80%;
+    margin-right: 0;
+  }
+  .divText {
+    max-width: 80%;
+    text-align: center;
+  }
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+  .img1 {
+    height: 100vh; /* Mantém o formato 9:16 e cobre a tela */
+  }
+  
+  .partOne {
+    height: 100vh; /* Ajusta a altura para telas pequenas */
+  }
+
+  .partTwo, .partThree {
+    flex-direction: column;
+    padding: 5vw;
+    text-align: center;
+  }
+
+  .img2 {
+    width: 90%;
+    height: auto;
+    margin-right: 0;
+  }
+
+  .divText {
+    max-width: 90%;
+    margin-bottom: 5vh;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 { font-size: 3.5vh; }
+  h2 { font-size: 3vh; }
+  .img1 { height: auto; width: 100%; }
+  .img2 { width: 100%; height: auto; }
+  .divText { max-width: 100%; }
+  .buyBtn2 { font-size: small; padding: 1vh; }
+}
+
