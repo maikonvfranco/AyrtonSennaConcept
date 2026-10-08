@@ -148,7 +148,7 @@ function App() {
             This site is not affiliated with, endorsed by, or connected to Ayrton Senna, Senna Brands, or Formula 1.
           </p>
           <p className="disclaimer-text-pt">
-            (Este site é um <strong>projeto fictício</strong> criado exclusivamente para fins de <strong>aprendizado e portfólio</strong>. Não há nenhum token, criptomoeda ou produto financeiro real. Não possui vínculo com a marca Ayrton Senna ou Senna Brands.)
+            Este site é um <strong>projeto fictício</strong> criado exclusivamente para fins de <strong>aprendizado e portfólio</strong>. Não há nenhum token, criptomoeda ou produto financeiro real. Não possui vínculo com a marca Ayrton Senna ou Senna Brands.
           </p>
           <p className="copyright">
             © {new Date().getFullYear()} — Educational Project. Designed for learning purposes.
